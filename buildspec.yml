@@ -12,7 +12,7 @@ phases:
     commands:
       - stackName="mono-autohelp"
       - aws cloudformation --region us-east-1 describe-stacks --stack-name $stackName
-      - sh deploy.sh us-east-1 $stackName
+      - sh deploy.sh us-east-1 mono-autohelp
       - echo "teste" >> elb.txt
   post_build:
     commands:
